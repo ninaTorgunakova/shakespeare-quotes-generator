@@ -1,0 +1,43 @@
+.start-page {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 45px);
+  padding-top: 45px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  &:not(:first-child) {
+    margin-left: 54px;
+  }
+}
+
+.start-photo {
+  height: calc(100vh - 90px);
+  width: 35vw;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.start-header {
+  font-family: 'Rakkas';
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  width: 40vw;
+}
+
+.button {
+  margin-top: 68px;
+}
+
+.curtain {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  z-index: -1;
+}
+
+  
