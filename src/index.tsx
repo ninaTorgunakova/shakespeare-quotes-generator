@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
+import MainPage from './MainPage';
 import reportWebVitals from './reportWebVitals';
-import StartPage from './StartPage/StartPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <StartPage />
+    <MainPage />
   </React.StrictMode>
 );
 

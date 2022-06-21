@@ -1,8 +1,8 @@
 import './StartPage.scss';
 
-const StartPage = () => {
+const StartPage = (props: {generateQuote: () => void}) => {
   return (
-    <div className="start-page">
+    <div className='start-page'>
       <div className='column'>
         <img src="pictures/main.png" alt='' className='start-photo'/>
       </div>
@@ -10,11 +10,11 @@ const StartPage = () => {
         <div className='start-header'>
           Ask Shakespeare to share his knowledge with you...
         </div>
-        <div className='button'>
+        <div className='button' onClick={props.generateQuote}>
           Grant me a wisdom!
         </div>
       </div>
-      <img src="pictures/curtain.png" alt='' className='curtain'/>
+      <img src='pictures/curtain.png' alt='' className='curtain'/>
     </div>
   );
 }

@@ -22,10 +22,11 @@
 
 .start-header {
   font-family: 'Rakkas';
-  font-weight: 400;
+  font-weight: 700;
   font-size: 2.5em;
   line-height: 1.25em;
   width: 40vw;
+  user-select: none;
 }
 
 .button {
@@ -39,5 +40,3 @@
   height: 100vh;
   z-index: -1;
 }
-
-  
