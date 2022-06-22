@@ -1,0 +1,25 @@
+.carousel {
+  display: flex;
+  width: calc(100vw - 120px);
+  padding: 60px 0px;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  & img {
+    border-radius: 5px;
+    border: 1px solid #000000;
+    object-fit: cover;
+  }
+  & .main {
+    height: 420px;
+    width: 390px;
+  }
+  & .medium {
+    height: 280px;
+    width: 260px;
+  }
+  & .small {
+    height: 140px;
+    width: 130px;
+  }
+}

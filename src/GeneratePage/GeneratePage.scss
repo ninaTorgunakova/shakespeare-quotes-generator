@@ -15,23 +15,12 @@
   height: calc(100vh - 100px);
 }
 
-.carousel {
-  display: flex;
-  justify-content: center;
-  min-height: 400px;
-  width: 90vw;
-}
-
-.picture {
-  height: 400px;
-  width: 400px;
-}
-
 .quote {
   font-family: 'Rakkas';
   font-weight: 700;
   font-size: 1.25em;
   line-height: 1.25em;
-  width: 70vw;
+  width: calc(100vw - 30px);
+  padding: 15px 0px;
   text-align: center;
 }
