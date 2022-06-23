@@ -16,14 +16,19 @@ body {
   height: 100px;
   background-color: #D4A72A;
   border-radius: 5px;
-  border: 1px solid #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
+  box-shadow: 0 10px #AA8522;
   &:hover {
-    background-color: #aa8522;
+    background-color: #AA8522;
     cursor: pointer;
     transition: background-color 1s;
+  }
+  &:active {
+    background-color: #AA8522;
+    box-shadow: 0 5px #977720;
+    transform: translateY(5px);
   }
 }

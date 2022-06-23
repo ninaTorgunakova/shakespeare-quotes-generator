@@ -83,7 +83,8 @@ export const QUOTES: string[] = [
   "There is nothing either good or bad, but thinking makes it so.",
   "What's in a name? That which we call a rose by any other word would smell as sweet…",
   "All the world's a stage, and all the men and women merely players.",
-  "The robbed that smiles, steals something from the thief."
+  "The robbed that smiles, steals something from the thief.",
+  "Hell is empty and all the devils are here"
 ];
 
 export const PICTURES: string[] = [

@@ -23,4 +23,11 @@
   width: calc(100vw - 30px);
   padding: 15px 0px;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.4s linear 0.2s;
+}
+
+.quote-loading {
+  opacity: 0;
+  transition: none;
 }
