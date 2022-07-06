@@ -4,8 +4,6 @@
   padding: 60px 0px;
   justify-content: space-between;
   align-items: center;
-  opacity: 1;
-  transition: opacity 1.5s;
   height: 400px;
   & img {
     border-radius: 5px;
@@ -24,9 +22,4 @@
     height: 140px;
     width: 130px;
   }
-}
-
-.pictures-loading {
-  opacity: 0;
-  transition: none;
 }

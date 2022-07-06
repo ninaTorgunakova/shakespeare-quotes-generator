@@ -10,10 +10,13 @@ const GeneratePage = () => {
   const generateQuote = (): void => {
     setLoading(true);
     setCurQuote(QUOTES[Math.floor(Math.random() * QUOTES.length)]);
-    setPictureIdx(Math.floor(Math.random() * PICTURES.length));
+    const intervalId: NodeJS.Timer = setInterval(() => {
+      setPictureIdx(Math.floor(Math.random() * PICTURES.length));
+    }, 300);
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+      clearInterval(intervalId);
+    }, 1600);
   }
   useEffect(() => {
     const loadPicture = (path: string) => {
@@ -25,7 +28,7 @@ const GeneratePage = () => {
       });
     }
     Promise.all(PICTURES.map(picture => loadPicture(picture)))
-      .then(() => setLoading(false))
+      .then(() => setLoading(false));
   }, []);
 
   return (
