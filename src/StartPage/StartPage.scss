@@ -15,21 +15,23 @@
 
 .start-photo {
   height: calc(100vh - 90px);
-  width: 35vw;
+  width: 40vw;
   border-radius: 5px;
   border: 1px solid #000000;
+  object-fit: cover;
+  z-index: -10;
 }
 
 .start-header {
   font-family: 'Rakkas';
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.25em;
   width: 40vw;
   user-select: none;
 }
 
-.button {
+.column .button {
   margin-top: 68px;
 }
 
@@ -39,4 +41,26 @@
   right: 0px;
   height: 100vh;
   z-index: -1;
+}
+
+@media screen and (max-width: 1020px) {
+  .start-header {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .column {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1020px) and (min-height: 800px) {
+  .start-photo {
+    height: 65vh;
+    width: 50vw;
+  }
+  .curtain {
+    display: none;
+  }
 }

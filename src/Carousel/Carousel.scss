@@ -1,7 +1,7 @@
 .carousel {
   display: flex;
   width: calc(100vw - 120px);
-  padding: 60px 0px;
+  padding: 2% 0%;
   justify-content: space-between;
   align-items: center;
   height: 400px;
@@ -21,5 +21,22 @@
   & .small {
     height: 140px;
     width: 130px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    & .main {
+      height: 400px;
+      width: 270px;
+    }
+    & .medium {
+      height: 220px;
+      width: 134px;
+    }
+    & .small {
+      height: 100px;
+      width: 140px;
+    }
   }
 }
