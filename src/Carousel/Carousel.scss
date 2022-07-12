@@ -1,10 +1,14 @@
 .carousel {
   display: flex;
-  width: calc(100vw - 120px);
-  padding: 2% 0%;
+  padding: 2% 2%;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   height: 400px;
+  @media screen and (max-width: 900px) {
+    padding: 1% 1%;
+    gap: 10px;
+  }
   & img {
     border-radius: 5px;
     border: 1px solid #000000;
@@ -13,30 +17,56 @@
   & .main {
     height: 420px;
     width: 390px;
+    @media screen and (max-width: 1200px) {
+      height: 400px;
+      width: 300px;
+    }
+    @media screen and (max-width: 900px) {
+      height: 482px;
+      width: 332px;
+    }
+    @media screen and (max-width: 690px) {
+      height: 422px;
+      width: 260px;
+    }
+    @media screen and (max-width: 530px) {
+      height: 400px;
+      width: 354px;
+    }
+    @media screen and (max-width: 364px) {
+      height: 400px;
+      width: 315px;
+    }
   }
   & .medium {
     height: 280px;
     width: 260px;
+    @media screen and (max-width: 1200px) {
+      height: 220px;
+      width: 154px;
+    }
+    @media screen and (max-width: 900px) {
+      height: 265px;
+      width: 170px;
+    }
+    @media screen and (max-width: 690px) {
+      height: 270px;
+      width: 130px;
+    }
+    @media screen and (max-width: 530px) {
+      display: none;
+    }
   }
   & .small {
     height: 140px;
     width: 130px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .carousel {
-    & .main {
-      height: 400px;
-      width: 270px;
-    }
-    & .medium {
-      height: 220px;
-      width: 134px;
-    }
-    & .small {
+    @media screen and (max-width: 1200px) {
       height: 100px;
       width: 140px;
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
 }
+

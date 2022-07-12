@@ -4,6 +4,9 @@
   left: 0px;
   z-index: 1;
   width: 100vw;
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
 }
 
 .main-column {
@@ -13,6 +16,14 @@
   align-items: center;
   padding: 50px 0px;
   height: calc(100vh - 100px);
+  @media screen and (max-width: 768px) {
+    height: calc(100vh - 50px);
+  }
+  @media screen and (max-width: 530px) {
+    height: 100vh;
+    padding: 0px;
+    justify-content: start;
+  }
 }
 
 .quote {
@@ -25,9 +36,30 @@
   text-align: center;
   opacity: 1;
   transition: opacity 0.7s linear 0.3s;
+  @media screen and (max-width: 768px) {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  @media screen and (max-width: 530px) {
+    font-weight: 300;
+    font-size: 1em;
+    height: 120px;
+  }
 }
 
 .quote-loading {
   opacity: 0;
   transition: none;
+}
+
+.button {
+  @media screen and (max-width: 530px) {
+    width: 349px;
+    height: 80px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 300px;
+    height: 70px;
+  }
 }
