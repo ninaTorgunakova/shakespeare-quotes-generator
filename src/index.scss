@@ -21,11 +21,6 @@ body {
   justify-content: center;
   user-select: none;
   box-shadow: 0 10px #AA8522;
-  &:hover {
-    background-color: #AA8522;
-    cursor: pointer;
-    transition: background-color 1s;
-  }
   &:active {
     background-color: #AA8522;
     box-shadow: 0 5px #977720;
