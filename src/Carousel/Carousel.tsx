@@ -13,7 +13,7 @@ const Carousel = (props: {pictureIdx: number, picturesLoading: boolean}) => {
     }
   }
   return (
-    <div className='carousel'>
+    <div className={'carousel ' + (props.picturesLoading ? 'loading' : '')}>
       <img src={getPicturePath(-2)} alt='' className='small'/>
       <img src={getPicturePath(-1)} alt='' className='medium'/>
       <img src={getPicturePath(0)} alt='' className='main'/>
