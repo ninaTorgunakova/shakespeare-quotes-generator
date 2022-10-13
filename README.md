@@ -1,4 +1,4 @@
-# PORTFOLIO
+# William Shakespeare`s quote generator
 
 Quote generator of the wisest of writers -- William Shakespeare.
 
