@@ -3,12 +3,20 @@
   justify-content: center;
   min-height: calc(100vh - 45px);
   padding-top: 45px;
+  gap: 54px;
+  @media screen and (max-width: 1020px) {
+    gap: 20px;
+  }
+  @media screen and (max-width: 400px) and (max-height: 750px) { 
+    gap: 10px;
+  }
   @media screen and (max-width: 768px) and (max-height: 1024px) {
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../public/pictures/main.png);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../public/pictures/main.webp);
     background-size: cover;
     justify-content: unset;
     align-items: flex-end;
     background-position: center;
+    gap: 20px;
   }
   @media screen and (min-height: 500px) and (max-height: 768px) {
     padding-top: 0px;
@@ -25,16 +33,9 @@
     }
   }
   &:not(:first-child) {
-    margin-left: 54px;
-    @media screen and (max-width: 1020px) {
-      margin-left: 20px;
-    }
     @media screen and (max-width: 768px) and (max-height: 1024px) {
-      margin-left: 8%;
-      margin-bottom: 8%;
-    }
-    @media screen and (max-width: 400px) and (max-height: 750px) { 
-      margin-left: 2%;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
   }
 }

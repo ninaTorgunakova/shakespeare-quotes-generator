@@ -6,6 +6,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-size: 32px;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,5 +27,9 @@ body {
     background-color: #AA8522;
     box-shadow: 0 5px #977720;
     transform: translateY(5px);
+  }
+  @media screen and (max-width: 475px) {
+    width: 250px;
+    text-align: center;
   }
 }

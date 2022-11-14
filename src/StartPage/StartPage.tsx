@@ -4,7 +4,7 @@ const StartPage = (props: {generateQuote: () => void}) => {
   return (
     <div className='start-page'>
       <div className='column'>
-        <img src='pictures/main.png' alt='' className='start-photo'/>
+        <img src='pictures/main.webp' alt='' className='start-photo'/>
       </div>
       <div className='column'>
         <div className='start-header'>
